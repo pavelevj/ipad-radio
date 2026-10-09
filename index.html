@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Rádio pro iPad</title>
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; background: #101419; color: #f5f7fa; font-family: Arial, Helvetica, sans-serif; font-size: 20px; line-height: 1.5; }
+main { display: block; max-width: 980px; margin: 0 auto; padding: 36px 24px; }
+h1 { font-size: 42px; margin: 0 0 8px; }
+.intro { color: #bfcbd8; margin: 0 0 30px; }
+.stations { font-size: 0; margin: 0 -8px; }
+.station { display: inline-block; vertical-align: top; width: 48%; width: calc(50% - 16px); margin: 8px; padding: 34px 20px; min-height: 156px; border: 2px solid #445363; border-radius: 16px; background: #202b38; color: #fff; text-decoration: none; font-size: 30px; font-weight: bold; text-align: center; }
+.station small { display: block; margin-top: 12px; color: #c5d9ec; font-size: 18px; font-weight: normal; }
+a.station:hover, a.station:focus { background: #2d4054; border-color: #8ed9ff; outline: 3px solid #8ed9ff; }
+a.station:active { background: #38526b; }
+.help { margin-top: 32px; padding: 24px; background: #19212b; border-radius: 12px; }
+.help h2 { font-size: 24px; margin: 0 0 14px; }
+.help p { margin: 10px 0; }
+.note { color: #acb9c7; font-size: 17px; margin-top: 28px; }
+@media (max-width: 600px) { main { padding: 24px 16px; } h1 { font-size: 34px; } .station { display: block; width: auto; padding: 26px 16px; min-height: 130px; } }
+</style>
+</head>
+<body>
+<main>
+<h1>Rádio pro iPad</h1>
+<p class="intro">Vyber stanici a poslouchej.</p>
+<div class="stations">
+<a class="station" href="http://icecast1.play.cz/signal128.mp3" rel="noreferrer">Signál rádio<small>Otevřít MP3 přehrávač</small></a>
+<a class="station" href="http://icecast8.play.cz/cro1-128.mp3" rel="noreferrer">ČRo Radiožurnál<small>Otevřít MP3 přehrávač</small></a>
+</div>
+<div class="help">
+<h2>Jak poslouchat</h2>
+<p>1. Klepni na velké tlačítko stanice.</p>
+<p>2. Pokud se zvuk nespustí, klepni v přehrávači Safari na přehrávání.</p>
+<p>3. Zvuk pozastavíš ovládáním přehrávače. Pro výběr jiné stanice použij v Safari tlačítko Zpět.</p>
+</div>
+<p class="note">Testovací verze pro iOS 9.3.6. Stanice se otevírají jako přímé HTTP odkazy ve stejné kartě, mimo tuto HTTPS stránku. Chování přehrávače a přehrávání při zamčeném iPadu je potřeba ověřit na zařízení.</p>
+</main>
+</body>
+</html>
